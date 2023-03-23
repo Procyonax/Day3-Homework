@@ -57,3 +57,24 @@ def number_to_full_month_name(num):
 
 def number_to_short_month_name(num):
     return shortmonth[str(num)]
+
+## Further
+
+def volume_of_cube(length_of_side):
+    return length_of_side ** 3
+
+def string_reverse(str):
+    string_reversed = ''
+    index = len(str)
+    while index > 0:
+        string_reversed += str[ index - 1 ]
+        index = index - 1
+    return string_reversed
+
+## ALTNERNATIVE
+# def string_reverse(str):
+#     ''.join(reversed(str))
+
+def fahrenheit_to_celsius(farenheit):
+    celsius = (farenheit - 32) * (5.0/9.0)
+    return round(celsius, 2)
